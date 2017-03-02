@@ -1,0 +1,131 @@
+body {
+    background-color: lightblue;
+}
+.jumbotron {
+	background-color: #ED3737;
+}
+.img-logo {
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+}
+
+.title {
+	color: yellow;
+	font-size: 35px;
+	line-height: 60px;
+}
+.contact-header {
+	text-align: center;
+	margin: 0px;	
+}	
+.logo {
+	float: left;
+}
+.logotr {
+
+	padding: 0px 0px 0px 700px;
+	border-radius: 8px;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+#myCarousel {
+	width: auto;
+	margin: 50px;
+	height: 150px;
+}
+p {
+	font-size: 12px;
+	font-weight: bold;
+}
+/* --- listes pizzas --- */
+.pizzsep {
+	margin-bottom: 15px;
+}
+.titrepizz {
+	/*clear: both;*/
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2em;
+	color: yellow;
+	background: black;
+}
+.pizza {
+	float: left;
+	width: 100%;
+	padding: 5px;
+	background: red;
+	border-bottom: 1px solid black;
+}
+.nompizz {
+	float: left;
+	color: yellow;
+	font-size: 18px;
+	font-weight: bold;
+}
+.prixpizz {
+	float:right;
+	font-size: 14px;
+	color: rgb(70,70,20);
+}
+.txtprixpizz {
+	color: yellow;
+	font-size: 18px;
+	font-weight: bold;
+}
+.descpizz {
+	float: left;
+	width: 100%;
+	font-size: 16px;
+}
+
+
+/* --- Qui sommes-nous --- */
+.qsn {
+	margin: 5px 0;
+	background : red;
+}
+.titreqsn {
+	color: yellow;
+	font-size: 18px;
+	font-weight: bold;
+}
+.pqsn {
+	font-size: 16px;
+	font-weight: normal;
+	color : black;
+}
+.imgqsn {
+	margin: 5px auto;
+}
+
+/* --- footer --- */
+.footer {
+	text-align: center;
+	margin: 5px 0;
+	padding: 10px;
+	background: black;
+	font-size: 18px;
+}
+.legal h4 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+}
+.legal p {
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+a.txtfoot, a.txtfoot:link, a.txtfoot:visited {
+	color: yellow;
+}
+a.txtfoot:hover, a.txtfoot:active {
+	color: red;
+	font-weight: bold;
+	text-decoration: none;
+}

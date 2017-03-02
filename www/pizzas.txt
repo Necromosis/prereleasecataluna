@@ -1,0 +1,407 @@
+
+
+
+<!-- Base Tomate -->
+
+<div class="pizza">
+	<div class="nompizz">La Margherita</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">5,20 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">7,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, fromage, olives.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Jam&oacute;n</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">6,50 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">8,20 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, jambon blanc, fromage, olives.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Régina</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">7,00 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">9,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, jambon blanc, champignons, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Catalane</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">7,50 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">10,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, chorizo, oignons rouges, poivrons, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">L'Orientale'</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">7,50 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">10,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, mergez, oignons rouges, poivrons, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Cabra</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">7,80 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">10,50 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, chèvre, fromage, accompagnement au choix : miel, persillade, ciboulette.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Calzone</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">7,80 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">10,50 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, jambon blanc, oeuf, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La 4 Fromages</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">9,00 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">11,50 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, bleu,parmesan, emmental, mozzarella.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">L'Hawaïenne</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">7,60 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">10,20 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, jambon blanc, ananas, crème fraîche.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Temporados</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">9,00 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">11,50 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, jambon blanc, champignons, artichauts, poivrons, oeufs, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Vegetariana</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">8,00 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">10,50 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, tomates fraîches, champignons, poivrons, oignons rouges, artichauts, fromage, olives.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Barcelona</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">9,00 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">12,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, boeuf haché, champignons, oeuf, oignons rouges, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Malaga</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">10,10 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">13,50 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, boeuf haché, chèvre, oeuf, oignons rouges, persillade, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Mexicaine</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">10,10 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">13,50 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, boeuf haché, chorizo, oignons rouges, persillade, oeuf, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Burger</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">5,20 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">7,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, boeuf haché, oignons rouges, cheddar, tomate fraîche, sauce burger, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">L'Andalouse</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">11,00 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">14,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, chorizo, mergez, lardons, boeuf haché, jambon blanc, oeuf, piment d'Espelette, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Flamenco</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">8,50 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">11,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, pommes de terre, jambon Serrano, oeuf, piment d'Espelette, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Caliente</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">9,00 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">12,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, jambon Serrano, chorizo, oeuf, piment d'Espelette, fromage.
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="pizza">
+	<div class="nompizz">La Campesina</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">7,50 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">10,00 €</span>
+	</div>
+	<div class="descpizz">
+		Crème, lardons, oignons rouges, persillade, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Coklina</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">9,30 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">12,50 €</span>
+	</div>
+	<div class="descpizz">
+		Crème, poulet, chèvre, miel, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Rambla</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">9,00 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">12,00 €</span>
+	</div>
+	<div class="descpizz">
+		Crème, poulet, champignons, oeuf, oignons rouges, ciboulette, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Madrilène</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">5,20 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">7,00 €</span>
+	</div>
+	<div class="descpizz">
+		Crème, lardons, oignons rouges, persillade, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Del Mar</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">5,20 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">7,00 €</span>
+	</div>
+	<div class="descpizz">
+		Crème, lardons, oignons rouges, persillade, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Carbonara</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">5,20 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">7,00 €</span>
+	</div>
+	<div class="descpizz">
+		Crème, lardons, oignons rouges, persillade, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Savoyarde</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">5,20 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">7,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, fromage, olives.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Boursin</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">5,20 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">7,00 €</span>
+	</div>
+	<div class="descpizz">
+		Crème, lardons, oignons rouges, persillade, fromage.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Tonno</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">5,20 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">7,00 €</span>
+	</div>
+	<div class="descpizz">
+		Crème, lardons, oignons rouges, persillade, fromage.
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="pizza">
+	<div class="nompizz">La Catalane</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">5,20 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">7,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, fromage, olives.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Catalane</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">5,20 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">7,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, fromage, olives.
+	</div>
+</div>
+
+<div class="pizza">
+	<div class="nompizz">La Catalane</div>
+	<div class="prixpizz">
+		29 cm : <span class=txtprixpizz">5,20 €</span>
+		&nbsp;&nbsp;&nbsp;
+		33 cm : <span class=txtprixpizz">7,00 €</span>
+	</div>
+	<div class="descpizz">
+		Sauce tomate, fromage, olives.
+	</div>
+</div>
+
+
+<div class="pizza">
+<h3>Pizza name</h3>
+<div class="price"><p>$330</p></div>
+<p>Ut enim ad..</p>
+</div>
+
+
+
+
+css
+======
+
+.pizza {
+	float:left;
+}
+.nompizz {
+	float:left;
+}
+.prixpizz {
+	float:right;
+}
+.descpizz {
+	clear:all;
+	width:100%;
+}
