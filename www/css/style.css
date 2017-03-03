@@ -4,15 +4,20 @@ body {
 .jumbotron {
 	background-color: #ED3737;
 }
+/*
 .img-logo {
 	margin: 20px 180px 0 0;
 }
+*/
 
+.posimage {
+	width:100%;
+}
 h1.title {
 	color: black;
 	font-size: 72px;
 	font-family: 'Permanent Marker', cursive;
-	text-shadow: 5px 10px 2px #D6D32D, -3px 6px 5px red;
+	text-shadow: 5px 10px 2px #D6D32D /*, -3px 6px 5px red*/;
 }
 .img-pizz {
 	width: 50%;
@@ -48,17 +53,24 @@ p {
 */
 
 /* --- nav bar --- */
+nav {
+	z-index: 10;
+}
 .navbar-default{
 	background-color: #333333;
 }
-
+ul#listenav {
+	width: 100%;
+}
+ul#listenav li {
+	width: 24%;
+}
 .navbar-nav > li > a.bnavig:visited{
 	color: white;
 	font-size: 25px;
 	font-weight: bold;
 }
 .navbar-nav > li > a.bnavig:link{
-	/*color: cyan;*/
 	font-size: 25px;
 	font-weight: bold;
 }
@@ -72,6 +84,24 @@ p {
 	color: #ED3737;
 	font-size: 25px;
 	font-weight: bold;
+}
+
+
+/* --- CAROUSEL CSS --- */
+
+.carousel{
+    background-color: #333;
+    color: yellow;
+}
+.carousel-control.left{
+    background-color: red; 
+}
+.carousel-control.right{
+    background-color: red; 
+}
+.carousel-indicators{
+    margin-top: 50px;
+    background-color: #333;
 }
 
 
@@ -118,6 +148,16 @@ p {
 	font-size: 16px;
 }
 
+/* --- supplements --- */
+.supplement {
+	background: #ED3737;
+	padding: 15px;
+	margin-bottom: 10px;
+	line-height: 26px;
+}
+div.supplement p {
+	color: black;
+}
 
 /* --- Qui sommes-nous --- */
 .qsn {
@@ -164,4 +204,14 @@ a.txtfoot:hover, a.txtfoot:active {
 	color: red;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+	.navbar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-color: #333;
+	}
 }
