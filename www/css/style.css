@@ -1,19 +1,25 @@
 body {
-    background-color: lightblue;
+    background-color: white;
 }
 .jumbotron {
 	background-color: #ED3737;
 }
 .img-logo {
-	text-align: center;
-	padding: 0px 0px 0px 0px;
+	margin: 20px 180px 0 0;
 }
 
-.title {
-	color: yellow;
-	font-size: 35px;
-	line-height: 60px;
+h1.title {
+	color: black;
+	font-size: 72px;
+	font-family: 'Permanent Marker', cursive;
+	text-shadow: 5px 10px 2px #D6D32D, -3px 6px 5px red;
 }
+.img-pizz {
+	width: 50%;
+	padding: 40px 0 0 80px;
+}
+
+/*
 .contact-header {
 	text-align: center;
 	margin: 0px;	
@@ -39,13 +45,43 @@ p {
 	font-size: 12px;
 	font-weight: bold;
 }
+*/
+
+/* --- nav bar --- */
+.navbar-default{
+	background-color: #333333;
+}
+
+.navbar-nav > li > a.bnavig:visited{
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+.navbar-nav > li > a.bnavig:link{
+	/*color: cyan;*/
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.navbar-nav > li > a.bnavig:hover{
+	color: yellow;
+	font-size: 28px;
+	font-weight: bold;
+}
+.navbar-nav > li > a.bnavig:active{
+	color: #ED3737;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
 /* --- listes pizzas --- */
 .pizzsep {
 	margin-bottom: 15px;
 }
 .titrepizz {
 	width: 100%;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: bold;
 	text-align: center;
 	line-height: 2em;
@@ -58,18 +94,18 @@ p {
 	width: 100%;
 	padding: 5px;
 	background: #ED3737;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid white;
+	color: black;
 }
 .nompizz {
 	float: left;
 	color: yellow;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: bold;
 }
 .prixpizz {
 	float:right;
 	font-size: 14px;
-	color: rgb(70,70,20);
 }
 .txtprixpizz {
 	color: yellow;
@@ -86,7 +122,7 @@ p {
 /* --- Qui sommes-nous --- */
 .qsn {
 	margin: 5px 0;
-	background : red;
+	background : #ED3737;
 }
 .titreqsn {
 	color: yellow;
