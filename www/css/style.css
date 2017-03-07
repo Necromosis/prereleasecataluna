@@ -1,5 +1,7 @@
 body {
+
     background-color: #DDD;
+
 }
 /* --- header --- */
 .jumbotron {
@@ -64,6 +66,8 @@ ul#listenav li {
 .carousel{
     background-color: #333;
     color: yellow;
+    font-size: 25px;
+    font-weight: bolder;
 }
 .carousel-control.left{
     background-color: red; 
@@ -75,7 +79,6 @@ ul#listenav li {
     margin-top: 50px;
     background-color: #333;
 }
-
 
 /* --- listes pizzas --- */
 .pizzsep {
