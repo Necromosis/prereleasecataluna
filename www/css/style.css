@@ -1,17 +1,19 @@
 body {
-	background-color: #dddddd;
+
+    background-color: #DDD;
+
 }
+/* --- header --- */
 .jumbotron {
 	background-color: #ED3737;
 }
-/*
-.img-logo {
-	margin: 20px 180px 0 0;
-}
-*/
-
-.posimage {
+.divimg {
 	width:100%;
+}
+.posimg {
+	width: 100%;
+	max-width: 300px;
+	margin: auto;
 }
 h1.title {
 	color: black;
@@ -24,40 +26,12 @@ h1.title {
 	padding: 40px 0 0 80px;
 }
 
-/*
-.contact-header {
-	text-align: center;
-	margin: 0px;	
-}	
-.logo {
-	float: left;
-}
-.logotr {
-
-	padding: 0px 0px 0px 700px;
-	border-radius: 8px;
-}
-h1 {
-    color: white;
-    text-align: center;
-}
-#myCarousel {
-	width: auto;
-	margin: 50px;
-	height: 150px;
-}
-p {
-	font-size: 12px;
-	font-weight: bold;
-}
-*/
-
 /* --- nav bar --- */
 nav {
 	z-index: 10;
 }
 .navbar-default{
-	background-color: #333333;
+	background-color: #333;
 }
 ul#listenav {
 	width: 100%;
@@ -116,7 +90,7 @@ ul#listenav li {
 	font-weight: bold;
 	text-align: center;
 	line-height: 2em;
-	color: yellow;
+	color: #FFEE5B;
 	background: black;
 	margin: 10px 0;
 }
@@ -125,12 +99,12 @@ ul#listenav li {
 	width: 100%;
 	padding: 5px;
 	background: #ED3737;
-	border-bottom: 2px solid ;
+	border-bottom: 2px solid black;
 	color: black;
 }
 .nompizz {
 	float: left;
-	color: yellow;
+	color: #FFEE5B;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -139,7 +113,7 @@ ul#listenav li {
 	font-size: 14px;
 }
 .txtprixpizz {
-	color: yellow;
+	color: #FFEE5B;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -166,7 +140,7 @@ div.supplement p {
 	background : #ED3737;
 }
 .titreqsn {
-	color: yellow;
+	color: #FFEE5B;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -199,7 +173,7 @@ div.supplement p {
 	text-align: justify;
 }
 a.txtfoot, a.txtfoot:link, a.txtfoot:visited {
-	color: yellow;
+	color: #FFEE5B;
 }
 a.txtfoot:hover, a.txtfoot:active {
 	color: red;
@@ -214,5 +188,8 @@ a.txtfoot:hover, a.txtfoot:active {
 		left: 0;
 		width: 100%;
 		border-color: #333;
+	}
+	body {
+		padding-top: 50px;
 	}
 }
