@@ -19,7 +19,9 @@ h1.title {
 	padding: 40px 0 0 80px;
 }
 
-/*
+iframe{
+	margin: 0 50%;
+}/*
 .contact-header {
 	text-align: center;
 	margin: 0px;	
@@ -122,10 +124,10 @@ p {
 /* --- Qui sommes-nous --- */
 .qsn {
 	margin: 5px 0;
-	background : #ED3737;
+	background : #7B888C;
 }
 .titreqsn {
-	color: yellow;
+	color: #000000;
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -158,7 +160,7 @@ p {
 	text-align: justify;
 }
 a.txtfoot, a.txtfoot:link, a.txtfoot:visited {
-	color: yellow;
+	color: #FFFFFF;
 }
 a.txtfoot:hover, a.txtfoot:active {
 	color: red;
