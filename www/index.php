@@ -4,15 +4,17 @@
     // --- connexion base de donnees
     include 'connect.php';
     $bdd = mysqli_connect(SERVEUR, USER, PASSE, DB) or die("Connexion DB impossible (code : ".mysqli_connect_errno()." ".mysqli_connect_error().")");
+    mysqli_set_charset($bdd,"utf8");
 
     // --- recup libelles types pizzas
     $pizzastypes = [];
-    $sql = "SELECT idtype, pizztype, ordreaff FROM pizzatypes ORDER BY ordreaff";
+    $sql = "SELECT idtype, pizztype, txtbtn, ordreaff FROM pizzatypes ORDER BY ordreaff";
     $res = mysqli_query($bdd, $sql);
     while ( $recpizztype = mysqli_fetch_assoc($res) ) {
         $idtype = $recpizztype['idtype'];
         $pizzastypes[$recpizztype['ordreaff']]['idtype'] = $idtype;
         $pizzastypes[$recpizztype['ordreaff']]['pizztype'] = $recpizztype['pizztype'];
+        $pizzastypes[$recpizztype['ordreaff']]['txtbtn'] = $recpizztype['txtbtn'];
         // --- calcul du nombre de pizzas de ce type
         $sql2 = "SELECT * FROM pizzas WHERE idtype=$idtype";
         $res2 = mysqli_query($bdd, $sql2);
@@ -24,13 +26,13 @@ function affcolpizz ($res) {
     $html .= '<div class="col-xs-12 col-sm-6">'; // div colonne
     while ( $pizza = mysqli_fetch_assoc($res)) {
         $html .=  '<div class="pizza">';
-            $html .=  '<div class="nompizz">'.iconv('ISO-8859-15','UTF-8',$pizza['nompizz']).'</div>';
+            $html .=  '<div class="nompizz">'.$pizza['nompizz'].'</div>';
             $html .=  '<div class="prixpizz">';
                 $html .=  '29 cm : <span class="txtprixpizz">'.number_format($pizza['prix29'],2,',',' ').' €</span>';
                 $html .=  '&nbsp;&nbsp;&nbsp;';
                 $html .=  '33 cm : <span class="txtprixpizz">'.number_format($pizza['prix33'],2,',',' ').' €</span>';
             $html .=  '</div>';
-            $html .=  '<div class="descpizz">'.iconv('ISO-8859-15','UTF-8',$pizza['compo']).'</div>';
+            $html .=  '<div class="descpizz">'.$pizza['compo'].'</div>';
         $html .=  '</div>';
     }
     $html .= '</div>'; // --- fin de div colonne
@@ -75,10 +77,13 @@ function affcolpizz ($res) {
                         // --- pour tous les types de pizzas, on affiche le titre, puis la liste sur 2 colonnes
                         foreach ( $pizzastypes as $pizztype ) {
 
+                            // --- on cree l'ancre pour la navbar
+                            echo '<div id="pizztyp'.$pizztype['idtype'].'"></div>';
+
                             // --- on affiche le type de pizza sur toute la largeur
                             echo '<div class="row">';
                                 echo '<div class="col-xs-12">';
-                                    echo '<div id="pizztomate" class="titrepizz">'.iconv('ISO-8859-15','UTF-8',$pizztype['pizztype']).'</div>';
+                                    echo '<div id="pizztomate" class="titrepizz">'.$pizztype['pizztype'].'</div>';
                                 echo '</div>';
                             echo '</div>';
 
@@ -95,10 +100,10 @@ function affcolpizz ($res) {
                                 $res = mysqli_query($bdd, $sql);
 
 
-                              echo affcolpizz($res); // genere le contenu html de la colonne
+                                echo affcolpizz($res); // genere le contenu html de la colonne
 
 
-                               // --- recuperation des pizzas de la colonne droite
+                                // --- recuperation des pizzas de la colonne droite
                                 $sql = "SELECT nompizz, compo, prix29, prix33 FROM pizzas WHERE idtype=".$pizztype['idtype']." LIMIT $nbpizzgauche,500";
                                 $res = mysqli_query($bdd, $sql);
 

@@ -54,7 +54,7 @@ ul#listenav {
 	width: 100%;
 }
 ul#listenav li {
-	width: 24%;
+	padding: 0 20px;
 }
 .navbar-nav > li > a.bnavig:visited{
 	color: white;

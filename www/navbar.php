@@ -15,9 +15,12 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul id="listenav" class="nav navbar-nav">
-            <li><a class="bnavig text-center" href="#pizztomate">Base Tomate</a></li>
-            <li><a class="bnavig text-center" href="#pizzcreme">Base Crème</a></li>
-            <li><a class="bnavig text-center" href="#pizzdessert">Desserts</a></li>
+            <?php
+                // --- pour chaque type de pizza, on fabrique le lien et l'ancre
+                foreach ( $pizzastypes as $pizztype ) {
+                    echo '<li><a class="bnavig text-center" href="#pizztyp'.$pizztype['idtype'].'">'.$pizztype['txtbtn'].'</a></li>';
+                }
+            ?>
             <li><a class="bnavig text-center" href="#noscontacts">Qui sommes-nous ?</a></li>
         </ul>
     </div><!-- /.navbar-collapse -->

@@ -18,13 +18,14 @@ DROP TABLE IF EXISTS pizzatypes;
 CREATE TABLE pizzatypes (
   idtype INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   pizztype VARCHAR(250),
+  txtbtn varchar(20),
   ordreaff TINYINT
 ) DEFAULT CHARACTER SET=utf8;
 
 # on peuple la table pizzatypes
-INSERT INTO pizzatypes (idtype, pizztype, ordreaff) VALUES (1, 'Pizzas base tomate',1);
-INSERT INTO pizzatypes (idtype, pizztype, ordreaff) VALUES (2, 'Pizzas base crême',2);
-INSERT INTO pizzatypes (idtype, pizztype, ordreaff) VALUES (3, 'Pizzas dessert',3);
+INSERT INTO pizzatypes (idtype, pizztype, txtbtn, ordreaff) VALUES (1, 'Pizzas base tomate','Base tomate',1);
+INSERT INTO pizzatypes (idtype, pizztype, txtbtn, ordreaff) VALUES (2, 'Pizzas base crême','Base crême',2);
+INSERT INTO pizzatypes (idtype, pizztype, txtbtn, ordreaff) VALUES (3, 'Pizzas dessert','Dessert',3);
 
 # controle
 SELECT * FROM pizzatypes;
