@@ -170,6 +170,14 @@ div.supplement p {
 	margin: 5px auto;
 }
 
+/* --- map --- */
+iframe  {
+	width: 400px;
+	height: 300px;
+	border: 1px solid #ED3737;
+	margin: 0 auto;
+}
+
 /* --- footer --- */
 .footer {
 	text-align: center;
@@ -190,7 +198,6 @@ div.supplement p {
 	text-align: justify;
 }
 a.txtfoot, a.txtfoot:link, a.txtfoot:visited {
-
 	color: #FFEE5B;
 }
 a.txtfoot:hover, a.txtfoot:active {

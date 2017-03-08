@@ -1,4 +1,7 @@
 <?php
+    // ---------------------------------------
+    // --- index.php partie adlinistration ---
+    // ---------------------------------------
 
     // --- connexion base de donnees
     include '../connect.php';
@@ -19,6 +22,8 @@
         $res2 = mysqli_query($bdd, $sql2);
         $pizzastypes[$recpizztype['ordreaff']]['nbpizz'] = mysqli_num_rows($res2);
     }
+
+$titreheader = "Carte des pizzas";
 ?>
 
 
@@ -26,7 +31,7 @@
 
 <!-- note : la row est ouverte dans le header, et fermee dans le footer -->
 
-    <div class="col-xs-12 text-center carte">Carte des pizzas</div>
+    <div class="col-xs-12 text-center titre">Carte des pizzas</div>
     <div class="col-xs-12 bouton"><a href="form.php" class="btn btn-danger btn-xs">Ajouter une pizza</a></div>
 
     <?php
@@ -45,7 +50,7 @@
                     echo '<div class="infos">';
                         echo '<a href="form.php?id='.$pizza['id'].'"><img src="img/modif.png" alt="bouton modification" /></a>';
                         echo '&nbsp;&nbsp;&nbsp;&nbsp;';
-                        echo '<a href="delete.php?id='.$pizza['id'].'"><img src="img/supp.png" alt="bouton suppression" /></a>';
+                        echo '<img class="pointer" src="img/supp.png" alt="bouton suppression" onclick="envoieForm('.$pizza['id'].');" />';
                         echo '&nbsp;&nbsp;&nbsp;&nbsp;';
                         echo '<span class="plusgros">' . $pizza['nompizz'] . '</span> (' . $pizza['compo'] . ') - ';
                         echo '29 cm : <span class="plusgros">' . number_format($pizza['prix29'], 2, ',', ' ') . ' €</span> - ';
@@ -56,5 +61,15 @@
             echo '<div class="col-xs-12 bouton"><a href="form.php" class="btn btn-danger btn-xs">Ajouter une pizza</a></div>';
        }
     ?>
+
+    <form id="delpizz" action="delpizz.php" method="post">
+        <input type="hidden" id="id" name="id" value="" />
+    </form>
+    <script>
+        function envoieForm(id) {
+            document.getElementById('id').value = id;
+            document.getElementById('delpizz').submit();
+        }
+    </script>
 
 <?php include 'footer.php'; ?> <!-- fin de page html -->

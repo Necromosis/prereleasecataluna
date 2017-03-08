@@ -51,7 +51,7 @@ INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('L\'Oriental
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Cabra', 'Sauce tomate, chèvre, fromage, accompagnement au choix : miel, persillade, ciboulette.', 7.80, 10.50, 1);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Calzone', 'Sauce tomate, jambon blanc, oeuf, fromage.', 7.80, 10.50, 1);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La 4 Fromages', 'Sauce tomate, bleu,parmesan, emmental, mozzarella.', 9.00, 11.50, 1);
-INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('L\'Hawaïenne', 'Sauce tomate, jambon blanc, ananas, crème fraîche.', 7.60, 10.20, 1);
+INSERT INTO pizzas (nompizzz, compo, prix29, prix33, idtype) VALUES ('L\'Hawaïenne', 'Sauce tomate, jambon blanc, ananas, crème fraîche.', 7.60, 10.20, 1);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Temporados', 'Sauce tomate, jambon blanc, champignons, artichauts, poivrons, oeufs, fromage.', 9.00, 11.50, 1);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Barcelona', 'Sauce tomate, boeuf haché, champignons, oeuf, oignons rouges, fromage.', 9.00, 12.00, 1);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Malaga', 'Sauce tomate, boeuf haché, chèvre, oeuf, oignons rouges, persillade, fromage.', 10.10, 13.50, 1);
