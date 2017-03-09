@@ -32,7 +32,13 @@ $titreheader = "Carte des pizzas";
 <!-- note : la row est ouverte dans le header, et fermee dans le footer -->
 
     <div class="col-xs-12 text-center titre">Carte des pizzas</div>
-    <div class="col-xs-12 bouton"><a href="form.php" class="btn btn-danger btn-xs">Ajouter une pizza</a></div>
+
+    <div class="col-xs-12 bouton">
+        <form action="../create.php" method="post">
+            <input type="hidden" name="mode" value="create">
+            <input type="submit" class="btn btn-danger btn-xs" value="Ajouter une pizza">
+        </form>
+    </div>
 
     <?php
         // --- affichage de la liste des pizzas par type de pizza
@@ -48,7 +54,7 @@ $titreheader = "Carte des pizzas";
             while ($pizza = mysqli_fetch_assoc($res)) {
                 echo '<div class="col-xs-12 lignepizz">';
                     echo '<div class="infos">';
-                        echo '<a href="form.php?id='.$pizza['id'].'"><img src="img/modif.png" alt="bouton modification" /></a>';
+                        echo '<a href="../edit.php?id='.$pizza['id'].'"><img src="img/modif.png" alt="bouton modification" /></a>';
                         echo '&nbsp;&nbsp;&nbsp;&nbsp;';
                         echo '<img class="pointer" src="img/supp.png" alt="bouton suppression" onclick="envoieForm('.$pizza['id'].');" />';
                         echo '&nbsp;&nbsp;&nbsp;&nbsp;';
@@ -58,12 +64,21 @@ $titreheader = "Carte des pizzas";
                     echo '</div>';
                 echo '</div>';
             }
-            echo '<div class="col-xs-12 bouton"><a href="form.php" class="btn btn-danger btn-xs">Ajouter une pizza</a></div>';
-       }
     ?>
 
-    <form id="delpizz" action="delpizz.php" method="post">
+            <div class="col-xs-12 bouton">
+                <form action="../create.php" method="post">
+                    <input type="hidden" name="mode" value="create">
+                    <input type="submit" class="btn btn-danger btn-xs" value="Ajouter une pizza">
+                </form>
+            </div>
+    <?php
+        }
+        ?>
+
+    <form id="delpizz" action="../action.php" method="post">
         <input type="hidden" id="id" name="id" value="" />
+        <input type="hidden" name="mode" value="delete"/>
     </form>
     <script>
         function envoieForm(id) {

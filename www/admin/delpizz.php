@@ -60,6 +60,8 @@ $titreheader = 'Suppression pizza';
 </div>
 <form id="supprime" name="supprime" action="delpizz.php" method="post">
     <input type="hidden" name="id" value="<?php echo $id; ?>" />
+    <input type="hidden" name="mode" value="delete";/>
+
 </form>
 <div class="col-xs-12 text-center">
     <a href="index.php" class="btn btn-success"><?php echo $btfin; ?></a>
