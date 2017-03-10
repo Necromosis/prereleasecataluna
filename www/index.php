@@ -67,7 +67,7 @@ function affcolpizz ($res) {
         include 'carousel.php';
     ?>
 
-<!-- zone liste pizzas ---------------------------------- -->
+<!-- zone liste pizzas ----------------------------------------------------------------------- -->
 
     <div class="container-fluid">
 
@@ -77,24 +77,26 @@ function affcolpizz ($res) {
                     // --- pour tous les types de pizzas, on affiche le titre, puis la liste sur 2 colonnes
                     foreach ( $pizzastypes as $pizztype ) {
 
-                        // --- on cree l'ancre pour la navbar
-                        echo '<div id="pizztyp'.$pizztype['idtype'].'"></div>';
+                        if ( $pizztype['nbpizz'] > 0 ) {  // --- s'il y a au moins une pizza à afficher
 
-                        // --- on affiche le type de pizza sur toute la largeur
-                        echo '<div class="row">';
+                            // --- on cree l'ancre pour la navbar
+                            echo '<div id="pizztyp' . $pizztype['idtype'] . '"></div>';
+
+                            // --- on affiche le type de pizza sur toute la largeur
+                            echo '<div class="row">';
                             echo '<div class="col-xs-12">';
-                                echo '<div id="pizztomate" class="titrepizz">'.$pizztype['pizztype'].'</div>';
+                            echo '<div id="pizztomate" class="titrepizz">' . $pizztype['pizztype'] . '</div>';
                             echo '</div>';
-                        echo '</div>';
+                            echo '</div>';
 
-                        // --- on calcule le nombre de pizzas pour la premiere colonne (le reste dans la deuxieme)
-                        $nbpizzgauche = ceil( $pizztype['nbpizz'] / 2 - 0.01 ); // ceil = arrondi superieur
+                            // --- on calcule le nombre de pizzas pour la premiere colonne (le reste dans la deuxieme)
+                            $nbpizzgauche = ceil($pizztype['nbpizz'] / 2 - 0.01); // ceil = arrondi superieur
 
-                        // creation de la row pour les 2 colonnes
-                        echo '<div class="row pizzsep">';
+                            // creation de la row pour les 2 colonnes
+                            echo '<div class="row pizzsep">';
 
                             // --- recuperation des pizzas de la colonne gauche
-                            $sql = "SELECT nompizz, compo, prix29, prix33 FROM pizzas WHERE idtype=".$pizztype['idtype']." LIMIT $nbpizzgauche;";
+                            $sql = "SELECT nompizz, compo, prix29, prix33 FROM pizzas WHERE idtype=" . $pizztype['idtype'] . " LIMIT $nbpizzgauche;";
                             $res = mysqli_query($bdd, $sql);
 
 
@@ -102,18 +104,20 @@ function affcolpizz ($res) {
 
 
                             // --- recuperation des pizzas de la colonne droite
-                            $sql = "SELECT nompizz, compo, prix29, prix33 FROM pizzas WHERE idtype=".$pizztype['idtype']." LIMIT $nbpizzgauche,500";
+                            $sql = "SELECT nompizz, compo, prix29, prix33 FROM pizzas WHERE idtype=" . $pizztype['idtype'] . " LIMIT $nbpizzgauche,500";
                             $res = mysqli_query($bdd, $sql);
 
                             echo affcolpizz($res); // genere le contenu html de la colonne
 
-                        // fin de la row
-                        echo '</div>';
+                            // fin de la row
+                            echo '</div>';
+                        }
 
                     }
                 ?>
             </div>
-        </div> <!-- fin zone pizzas -->
+        </div>
+<!-- fin zone liste pizzas ---------------------------------------------------------------- -->
 
         <?php
             include 'supplement.php';

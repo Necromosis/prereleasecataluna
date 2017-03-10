@@ -46,3 +46,9 @@
     font-size: 20px;
     line-height: 32px;
 }
+.erreur {
+    padding: 20px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -18,7 +18,9 @@
             <?php
                 // --- pour chaque type de pizza, on fabrique le lien et l'ancre
                 foreach ( $pizzastypes as $pizztype ) {
-                    echo '<li><a class="bnavig text-center" href="#pizztyp'.$pizztype['idtype'].'">'.$pizztype['txtbtn'].'</a></li>';
+                    if ( $pizztype['nbpizz'] > 0 ) { // --- seulement s'il y a au moins une pizza dans la categorie
+                        echo '<li><a class="bnavig text-center" href="#pizztyp'.$pizztype['idtype'].'">'.$pizztype['txtbtn'].'</a></li>';
+                    }
                 }
             ?>
             <li><a class="bnavig text-center" href="#noscontacts">Qui sommes-nous ?</a></li>
