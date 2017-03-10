@@ -24,7 +24,7 @@ while ( $recpizztype = mysqli_fetch_assoc($res) ) {
     $pizzastypes[$recpizztype['ordreaff']]['nbpizz'] = mysqli_num_rows($res2);
 }
 
-$titreheader = "Carte des pizzas - Types de pizzas";
+$titreheader = "Types de pizzas";
 ?>
 
 
@@ -33,6 +33,11 @@ $titreheader = "Carte des pizzas - Types de pizzas";
 <!-- note : la row est ouverte dans le header, et fermee dans le footer -->
 
 <div class="col-xs-12 text-center titre"><?php echo $titreheader; ?></div>
+<div class="col-xs-12 lignepizztype">
+    <a href="../index.php" class="btn btn-success btn-xs" target="_blanc">Voir le site</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="index.php" class="btn btn-info btn-xs">Gérer les pizzas</a>
+</div>
 <div class="col-xs-12">&nbsp;</div> <!-- ligne vide --- -->
 <div class="col-xs-12 lignepizztype"><a href="formtype.php" class="btn btn-danger btn-xs">Ajouter un type</a></div>
 
@@ -52,11 +57,11 @@ $titreheader = "Carte des pizzas - Types de pizzas";
 
             // --- on affiche le bouton suppression si pas ou plus de pizzas dans cette rubrique
             echo '
-                <form id="supptype'.$i.'" action="formtype.php" method="post">
+                <form id="supptype'.$i.'" action="delpizztype.php" method="post">
                     <input type="hidden" name="idtype" value="'.$pizztype['idtype'].'" />
                 </form>';
             // --- Note : le bouton est cree pour la mise en page, mais visible uniquement si utilisable
-            if ( $pizztype['nbpizz'] > 0 ) {
+            if ( $pizztype['nbpizz'] > 0 || count($pizzastypes) <= 1 ) {
                 $clsupp = ' voitpas';
             }
 
@@ -67,7 +72,7 @@ $titreheader = "Carte des pizzas - Types de pizzas";
                     <input type="hidden" name="idtype" value="'.$pizztype['idtype'].'" />
                </form>';
             // --- Note : le bouton est cree pour la mise en page, mais visible uniquement si utilisable
-            if ( $i == 1 ) {
+            if ( $i == 1 || count($pizzastypes) <= 1 ) {
                 $clup = ' voitpas';
             }
 
