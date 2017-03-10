@@ -61,7 +61,6 @@ INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('L\'Andalous
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Flamenco', 'Sauce tomate, pommes de terre, jambon Serrano, oeuf, piment d\'Espelette, fromage.', 8.50, 11.00, 1);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Caliente', 'Sauce tomate, jambon Serrano, chorizo, oeuf, piment d\'Espelette, fromage.', 9.00, 12.00, 1);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Savoyarde', 'Sauce tomate, fromage, olives.', 5.20, 7.00, 1);
-
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Campesina', 'Crème, lardons, oignons rouges, persillade, fromage.', 7.50, 10.00, 2);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Coklina', 'Crème, poulet, chèvre, miel, fromage.', 9.30, 12.50, 2);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Rambla', 'Crème, poulet, champignons, oeuf, oignons rouges, ciboulette, fromage.', 9.00, 12.00, 2);
@@ -70,7 +69,6 @@ INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Del Mar'
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Carbonara', 'Crème, lardons, oignons rouges, persillade, fromage.', 5.20, 7.00, 2);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Boursin', 'Crème, lardons, oignons rouges, persillade, fromage.', 5.20, 7.00, 2);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Tonno', 'Crème, lardons, oignons rouges, persillade, fromage.', 5.20, 7.00, 2);
-
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Sweety Poire', 'Crème, poire, amandes, coulis de chocolat.', 6.70, 9.00, 3);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Sweety Ananas', 'Crème, ananas, amandes, coulis de chocolat.', 6.00, 9.00, 3);
 INSERT INTO pizzas (nompizz, compo, prix29, prix33, idtype) VALUES ('La Smarties', 'Crème, smarties, coulis de chocolat.', 7.00, 10.00, 3);
