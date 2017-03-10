@@ -33,9 +33,9 @@ $titreheader = "Carte des pizzas";
 
     <div class="col-xs-12 text-center titre">Carte des pizzas</div>
     <div class="col-xs-12 lignepizztype">
-        <a href="../index.php" class="btn btn-success btn-xs" target="_blanc">Voir le site</a>
+        <a href="../index.php" class="btn btn-default btn-xs" target="_blanc">Voir le site</a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="admtype.php" class="btn btn-info btn-xs">Gérer les types de pizzas</a>
+        <a href="admtype.php" class="btn btn-default btn-xs">Gérer les types de pizzas</a>
     </div>
     <div class="col-xs-12 bouton"><a href="form.php" class="btn btn-danger btn-xs">Ajouter une pizza</a></div>
 

@@ -34,9 +34,9 @@ $titreheader = "Types de pizzas";
 
 <div class="col-xs-12 text-center titre"><?php echo $titreheader; ?></div>
 <div class="col-xs-12 lignepizztype">
-    <a href="../index.php" class="btn btn-success btn-xs" target="_blanc">Voir le site</a>
+    <a href="../index.php" class="btn btn-default btn-xs" target="_blanc">Voir le site</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="index.php" class="btn btn-info btn-xs">Gérer les pizzas</a>
+    <a href="index.php" class="btn btn-default btn-xs">Gérer les pizzas</a>
 </div>
 <div class="col-xs-12">&nbsp;</div> <!-- ligne vide --- -->
 <div class="col-xs-12 lignepizztype"><a href="formtype.php" class="btn btn-danger btn-xs">Ajouter un type</a></div>

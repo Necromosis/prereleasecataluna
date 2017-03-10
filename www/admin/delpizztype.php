@@ -11,8 +11,16 @@ if (!empty($_POST['idtype'])) {
         mysqli_set_charset($bdd, "utf8");
 
         if ( isset($_POST['btnsupp']) ) {
+            // --- recup de l'info ordre d'affichage avant effacement (pour remettre de l'ordre apres)
+            $sql = "SELECT * FROM pizzatypes WHERE idtype=$idtype";
+            $res = mysqli_query($bdd, $sql);
+            $pizztype = mysqli_fetch_assoc($res);
+            $ordreaffref = $pizztype['ordreaff'];
             // --- suppression tuple
             $sql = "DELETE FROM pizzatypes WHERE idtype=$idtype";
+            $res = mysqli_query($bdd, $sql);
+            // --- on reorganise les infos d'ordre d'affichage (on bouche le trou)
+            $sql = "update pizzatypes set ordreaff=ordreaff-1 where ordreaff>$ordreaffref";
             $res = mysqli_query($bdd, $sql);
             header('Location: admtype.php');
         }
