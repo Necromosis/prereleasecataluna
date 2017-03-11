@@ -42,6 +42,7 @@
         $prix33 = mysqli_real_escape_string($bdd, htmlentities(trim($_POST['prix33'])));
         $idtype = mysqli_real_escape_string($bdd, htmlentities(trim($_POST['idtype'])));
         $titreheader = $_POST['titreheader'];
+        $txtbtn = $_POST['txtbtn'];
         // --- Controles de saisie
         $ok = true;
         $erreur = '';
@@ -117,6 +118,7 @@
         <input id="prix33" class="form-control" type="text" name="prix33" value="<?php echo $prix33; ?>" /><br />
         <input type="hidden" name="id" value="<?php echo $id; ?>" /><br />
         <input type="hidden" name="titreheader" value="<?php echo $titreheader; ?>" />
+        <input type="hidden" name="txtbtn" value="<?php echo $txtbtn; ?>" />
     </form>
 </div>
 <div class="col-xs-12 col-md-8 col-md-offset-2">
